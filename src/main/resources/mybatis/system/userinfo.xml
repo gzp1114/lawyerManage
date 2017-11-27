@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.vcfilm.mbu.manage.dao.system.UserDao">
+
+    <select id="queryUserInfoById"  resultType="cn.vcfilm.mbu.manage.domain.base.UserInfo"
+            parameterType="int">
+        SELECT u.id AS userId,u.`name`,u.password,u.full_name AS fullName,u.email,u.phone,u.wechat_number as weChatNumber
+        from base_user u where u.id=#{userId}
+    </select>
+
+</mapper>
