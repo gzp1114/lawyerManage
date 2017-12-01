@@ -32,8 +32,8 @@
         <property name="fileEncoding" value="UTF-8"></property>
     </bean>
 
-    <import resource="mybatis-context.xml"/>
+    <!-- <import resource="mybatis-context.xml"/>
     <import resource="spring-cache.xml"/>
-    <import resource="spring-shiro.xml"/>
+    <import resource="spring-shiro.xml"/> -->
 
 </beans>
